@@ -4,31 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emi Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <div class="outerShell">
-        <H1>EMI Calculator for Homeloans</H1>
+  <div class="container" style="display: flex;margin-top: 2%;">
+ 
+  <div class="col-sm-6 col-12 card" >
+        <H1>EMI Calculator</H1>
         <form name="loan-form">
         <div class='loanBlock'>
-         Loan Amount<br>
-         <input type=number id="amount" style="border-radius:5px"><br>
+            <h3>Loan Amount</h3>
+            <input type=number id="amount" style="border-radius:5px"><br>
         </div>
          <div class='aprBlock'>
-         Annual Percent Rate<br>
-         <input type="number" name="apr" id="apr" style="border-radius:5px"><br>
+            <h3>Interest Rate</h3>
+            <input type="number" name="apr" id="apr" style="border-radius:5px"><br>
          </div>
           <div class='tenureBlock'>
-         Tenure<br>
+          <h3>Time Periods(yrs)</h3>
          <input type=number name="tenure" id="tenure" style="border-radius:5px"><br>
          <br>
           </div>
-          <div id=buttonBlock>
-        <button style="border-radius:2px" id="find">Find Out</button>
+          <div class="d-flex">
+        <button style="border-radius:2px" id="find" class="btn-sub">Find Emi</button>
           </div>
         </form>
-        <P id="EMICapt">asdf</P>
-        <script src='index.js'> </script>
+       
+       
+        
       </div>
+      <div class="col-sm-5 col-12pl-3 card">
+
+          <h1>Results</h1><br/>
+          <h3>Total EMI:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="emi"></span></h3>
+          <h3>Total Amount: &nbsp;&nbsp;&nbsp;&nbsp;<span id="totalAmt"></span></h3>
+          <h3>Total Interest:&nbsp;&nbsp;&nbsp;&nbsp;<span id="totalInt"></span></h3>
+          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+
+        </div>
+           
+  </div>
+  <script src='index.js'> </script>
+  <script>
+   
+    </script>
 </body>
 </html>

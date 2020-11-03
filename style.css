@@ -1,69 +1,67 @@
 body{
-    margin: 0%;
-    padding: 0;
+  display: grid;
+  /* align-items: center;
+  justify-content: center;
+  align-content: center; */
+  background-color: #FFBDA2;
+}
+input{
+  width: 100%;
+  height: 40px;
+  color: black;
 
 }
-.divShell{
-    background-color: antiquewhite
+.card{
+  background-color: #0C0D29;
+  box-shadow: -10px 10px 5px 5px #F0A384;
+  padding: 20px;
+   color: white;
+}
+h1{
+  text-align: center;
+}
+.option{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+label{
+  color:  #F0A384;
+ 
+}
+.password-result{
+  display: flex;
+  margin-bottom: 20px;
+}
+.btn{
+  background-color: #181934;
+  color:  #fff;
+  border: 0;
+  
+}
+.btn-sub{
+  background-color: #181934;
+  color:  #fff;
+  border: 0;
+  padding: 10px 30px;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  border: 1px solid white;
+  display: flex;
+  margin: auto;
+  font-weight: bolder;
+  
+}
+.button{
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  font-weight: bolder;
+}
+@media only screen and (min-width: 768px){
+  .card{
+    width: 100%;
   }
   
-  H1{
-    text-align: center
-  }
-  form{
-    border-radius: 25px;
-    background-color: thistle;
-    align-self: center;
-    color: brown;
-    margin: 6px;
-    padding-top: 20px;
-    padding-bottom:20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: "Times New Roman", Times, serif;
-  }
-  
-  .loanBlock{
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-  }
-  
-  .aprBlock{
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-  }
-  
-  .tenureBlock{
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-  }
-  
-  .buttonBlock{
-    text-align: center;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right:20px
-  }
-  
-  button{
-    position: relative;
-    left: 42.5%;
-    bottom: 25%;
-    background-color: navy;
-    color: white;
-    padding: 10px;
-    border-radius: 30px
-  }
-  
-  #EMICapt{
-  
-    border-radius: 10px;
-    background-color:antiquewhite;
-    color: rgb(236, 17, 17);
-    padding: 20px;
-    text-align: center
-  }
+}
